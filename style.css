@@ -5,6 +5,8 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    background-color: #1f242d;
+    scroll-behavior: smooth;
 }
 
 
@@ -216,7 +218,7 @@ a{
     position: relative;
     width: 100%;
     height: 100%;
-    background: rgb(0, 0, 0);
+    
     border-radius: 50%;
     border: .1px solid black;
     display: flex;
@@ -259,10 +261,197 @@ a{
 }
 
 
+#about p{
+    font-size: 16px;
+    color: #fff;
+    padding: 40px;
+    background-color: #7ba2f42b;
+    border-radius: 20%;
+    width: fit-content;
+    height: fit-content;
+    baackdrop-filter: blur(10px);
+}
+
+#about h1{
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-shadow: #012063;
+    
+}
+
+#Projects h1{
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-shadow: #012063;
+}
+
+
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding-top: 1rem;
+
+}
+
+.project-card {
+  
+  color: #fff;
+  padding: 1.5rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(86, 86, 113, 0.76);
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-card h3 {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  color: #ccc;
+}
+
+.project-card p {
+  margin: 0.5rem 0 1rem;
+  font-size: 0.95rem;
+  color: #aaa;
+}
+
+.project-icon {
+  font-size: 2.5rem;
+  color: #040447;
+}
+
+.coming-soon .tag {
+  background: #040447;
+  color: #ffffff;
+  font-weight: bold;
+  padding: 0.2rem 0.6rem;
+  border-radius: 5px;
+  font-size: 0.8rem;
+}
+
+.section-intro {
+  color: #bbb;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
 
 
 
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+  padding: 1rem;
+}
 
+.skill-card {
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 1rem;
+  border-radius: 12px;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
+.skill-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
 
+#Skills h1 {
+    color: #fff;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
 
+.section-intro {
+  color: #bbbbbb;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.floating-skill-cloud {
+  position: relative;
+  width: 100%;
+  min-height: 300px;
+  margin-top: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+  perspective: 800px;
+}
+
+.floating-skill {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 15px;
+  padding: 0.8rem 1.2rem;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.7rem;
+  transform: translate(calc(var(--x) * 1px), calc(var(--y) * 1px)) rotateZ(calc(var(--x) * 0.3deg));
+  animation: float 6s ease-in-out infinite;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  transition: transform 0.4s ease;
+}
+
+.floating-skill:hover {
+  transform: scale(1.1) translate(calc(var(--x) * 1px), calc(var(--y) * 1px));
+  z-index: 2;
+}
+
+@keyframes float {
+  0% { transform: translate(calc(var(--x) * 1px), calc(var(--y) * 1px)) rotateZ(0deg); }
+  50% { transform: translate(calc(var(--x) * 1.5px), calc(var(--y) * 1.5px)) rotateZ(3deg); }
+  100% { transform: translate(calc(var(--x) * 1px), calc(var(--y) * 1px)) rotateZ(0deg); }
+}
+
+#Contact h1{
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;   
+}
+.contact-info-box {
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 20px;
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  color: #fff;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.1rem;
+}
+
+.contact-item i {
+  font-size: 1.5rem;
+  color: #102ad2;
+}
