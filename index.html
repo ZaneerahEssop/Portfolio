@@ -1,68 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio Website Using HTML & CSS</title>
-    <link rel=" stylesheet" href="style.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Zaneerah Essop Portfolio</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
 </head>
 
 <body>
+
+  <!-- Navbar -->
   <nav class="navbar">
     <a href="#" class="logo">Portfolio.</a>
     <ul>
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#Projects">Projects</a></li>
-        <li><a href="#Skills">Skills</a></li>
-        <li><a href="#Contact">Contact</a></li>
-
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#Projects">Projects</a></li>
+      <li><a href="#Skills">Skills</a></li>
+      <li><a href="#Contact">Contact</a></li>
     </ul>
-
   </nav>
 
+  <!-- Animated Bars -->
   <div class="bars-animation">
-    <div class="bar" style=" --i:6;"></div>
-    <div class="bar" style=" --i:5;"></div>
-    <div class="bar" style=" --i:4;"></div>
-    <div class="bar" style=" --i:3;"></div>
-    <div class="bar" style=" --i:2;"></div>
-    <div class="bar" style=" --i:1;"></div>
+    <div class="bar" style="--i:6;"></div>
+    <div class="bar" style="--i:5;"></div>
+    <div class="bar" style="--i:4;"></div>
+    <div class="bar" style="--i:3;"></div>
+    <div class="bar" style="--i:2;"></div>
+    <div class="bar" style="--i:1;"></div>
   </div>
 
+  <!-- Home Section -->
   <section id="home" class="home">
     <div class="home-info">
-        <h1>Zaneerah Essop</h1>
-        <h2>I'm a
-            <span style="--i:3;" data-text="3rd year computer science student">3rd year computer science student</span>
-            <span style="--i:2;" data-text="Designer">Designer</span>
-            <span style="--i:1;" data-text="Developer">Developer</span>
-            <span style="--i:4;" data-text="Student">Student</span>
+      <h1>Zaneerah Essop</h1>
+      <h2>I'm a
+        <span style="--i:3;" data-text="3rd year computer science student">3rd year computer science student</span>
+        <span style="--i:2;" data-text="Designer">Designer</span>
+        <span style="--i:1;" data-text="Developer">Developer</span>
+        <span style="--i:4;" data-text="Student">Student</span>
+      </h2>
+      <p>
+        I’m a passionate third-year double Computer Science major student at the University of the Witwatersrand.
+        With hands-on experience in programming, cloud technologies, and teamwork, I enjoy solving real-world problems through tech.
+        I’ve participated in AWS hackathons and earned a Cloud Practitioner certification, continuously exploring ways to innovate and grow in the digital space.
+      </p>
 
-        </h2>
-        <p>I’m a passionate third-year double Computer Science major student at the University of the Witwatersrand. With hands-on experience in programming, cloud technologies, and teamwork, I enjoy solving real-world problems through tech.
-         I’ve participated in AWS hackathons and earned a Cloud Practitioner certification, continuously exploring ways to innovate and grow in the digital space.</p>
-    
-        <div class="btn-sci">
-            <a href="CVNEW.pdf" class="btn" download>Download CV</a>
-            <div class="sci">
-                <a href="https://github.com/ZaneerahEssop"><i class='bx bxl-github'></i></a>
-                <a href="https://linkedin.com/in/zaneerah-essop"><i class='bx bxl-linkedin'></i></a>
-                <a href="https://wa.me/+27648699011"><i class='bx bxl-whatsapp'></i></a>
-               
-            </div>
+      <div class="btn-sci">
+        <a href="CVNEW.pdf" class="btn" download>Download CV</a>
+        <div class="sci">
+          <a href="https://github.com/ZaneerahEssop"><i class='bx bxl-github'></i></a>
+          <a href="https://linkedin.com/in/zaneerah-essop"><i class='bx bxl-linkedin'></i></a>
+          <a href="https://wa.me/+27648699011"><i class='bx bxl-whatsapp'></i></a>
         </div>
+      </div>
     </div>
 
     <div class="home-img">
-        <div class="img-box">
-            <div class="img-item">
-                <img src="zaneerahbit-removebg-preview.png" alt="">
-            </div>
+      <div class="img-box">
+        <div class="img-item">
+          <img src="zaneerahbit-removebg-preview.png" alt="Zaneerah Essop">
         </div>
+      </div>
     </div>
   </section>
-    
+
+  <!-- About Section -->
+  <section id="about">
+    <h1>About Me</h1>
+    <p>
+      I didn’t always see myself in computer science. In fact, I started with little knowledge about programming or technology. What began as a curious choice quickly became a full degree—and now, in my final year, I couldn’t imagine taking any other path.
+        My academic journey started with physics, which I loved but couldn’t fully commit to. I moved on to applied mathematics, and eventually pursued a double major in Computer Science.
+         The transition from theoretical math to hands-on coding was challenging, but it taught me how to think logically, solve complex problems, and adapt quickly. 
+         Mathematics sharpened my analytical thinking, and that foundation continues to support my development as a programmer.What excites me most is how dynamic this field is—every week brings something new to learn. 
+         Lately, I’ve grown passionate about designing and building websites from the ground up, and I'm also exploring software development and data science. I plan to pursue an Honours degree to continue growing in these areas.
+         From where I started to where I am now, it has been a long and demanding journey. But through perseverance, adaptability, and a strong work ethic, I’ve grown into someone who thrives in collaborative environments and embraces learning with enthusiasm. 
+         The challenges have been many—but so have the rewards.
+    </p>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="Projects">
+    <h1>Projects</h1>
+    <p class="section-intro">Here's a showcase of some of my work and what's coming soon.</p>
+
+    <div class="projects-container">
+
+      <!-- YouTube Project -->
+      <div class="project-card">
+        <iframe width="100%" height="215" src="https://www.youtube.com/embed/oMN-GvXwW4E?si=mr19z7zJ2xIw59jl" 
+          title="Sports Management System" frameborder="0" allowfullscreen></iframe>
+        <h3>Sports Facility Management System</h3>
+        <p>A full-stack web application designed to streamline community sports facility bookings, user management, maintenance reporting, and event scheduling. This system allows residents and staff to interact efficiently while promoting transparency and accessibility in managing sports venues.</p>
+      </div>
+
+      <!-- GitHub Profiles -->
+      <div class="project-card">
+        <i class='bx bxl-github project-icon'></i>
+        <h3>GitHub - Main</h3>
+        <p>Explore a collection of personal and academic projects from hackathons to experimental designs.</p>
+        <a href="https://github.com/ZaneerahEssop" target="_blank" class="btn">Visit Profile</a>
+      </div>
+
+       <div class="project-card">
+        <i class='bx bx-loader-circle project-icon'></i>
+        <h3>Amiscis Innovations</h3>
+        <p>Amiscis Innovations – A creative tech collective focused on building smart, community-driven digital solutions.</p>
+        <a href="https://amicisinnovations.co.za" target="_blank" class="btn">Visit Profile</a>
+      </div>
+
+      <div class="project-card">
+        <i class='bx bxl-github project-icon'></i>
+        <h3>GitHub - Collaborations</h3>
+        <p>Browse through my collaborative repositories, group projects, and community-focused contributions.</p>
+        <a href="https://github.com/zaneerah" target="_blank" class="btn">Visit Profile</a>
+      </div>
+
+      <!-- Coming Soon -->
+      <div class="project-card coming-soon">
+        <i class='bx bx-loader-circle project-icon'></i>
+        <h3>QUANTIX</h3>
+        <p>A cutting-edge web application for visual data analysis and computation — coming soon!</p>
+        <span class="tag">Coming Soon</span>
+      </div>
+
+      <div class="project-card coming-soon">
+        <i class='bx bx-list-check project-icon'></i>
+        <h3>To-Do App</h3>
+        <p>A sleek and intuitive task manager app designed to keep your productivity on track.</p>
+        <span class="tag">Coming Soon</span>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="Skills">
+  <h1>Skills</h1>
+  <p class="section-intro">Here are some of the technologies I use:</p>
+
+  <div class="floating-skill-cloud">
+    <div class="floating-skill" style="--x: -20; --y: 10;">Java</div>
+    <div class="floating-skill" style="--x: 30; --y: -15;">JavaScript</div>
+    <div class="floating-skill" style="--x: -25; --y: -20;">Python</div>
+    <div class="floating-skill" style="--x: 10; --y: 25;">C</div>
+    <div class="floating-skill" style="--x: -10; --y: -30;">C++</div>
+    <div class="floating-skill" style="--x: 15; --y: 15;">SQL</div>
+    <div class="floating-skill" style="--x: -15; --y: 20;">LaTeX</div>
+    <div class="floating-skill" style="--x: 25; --y: -10;">VS Code</div>
+    <div class="floating-skill" style="--x: 5; --y: 30;">HTML</div>
+    <div class="floating-skill" style="--x: -30; --y: -5;">CSS</div>
+  </div>
+</section>
+
+
+  <!-- Contact Section -->
+  <section id="Contact">
+    <h1>Contact Me</h1>
+    <p class="section-intro">Feel free to reach out to me directly:</p>
+
+    <div class="contact-info-box">
+      <div class="contact-item">
+        <i class='bx bx-user'></i>
+        <span>Zaneerah Essop</span>
+      </div>
+      <div class="contact-item">
+        <i class='bx bx-phone'></i>
+        <span>+27 64 869 9011</span>
+      </div>
+      <div class="contact-item">
+        <i class='bx bx-envelope'></i>
+        <span>zaneerah@email.com</span>
+      </div>
+    </div>
+  </section>
+
 </body>
 </html>
